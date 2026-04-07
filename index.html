@@ -1,70 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Matchey</title>
+  <meta name="description"
+    content="Matchey helps students and professionals learn through private conversations with alumni. See the future of work before you join it." />
+  <title>Matchey | See The Future of Work</title>
+
+  <!-- Font Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;700;800&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./landing.css" /> <!-- Dedicated landing styles -->
 </head>
-<body>
+
+<body class="landing-page revamped-landing">
   <div class="site-shell">
-    <header class="topbar">
-      <div>
-        <p class="eyebrow">Matchey</p>
-        <h1>Meet people without the usual noise.</h1>
+    <header class="topbar glass-header">
+      <div class="logo-container">
+        <img src="./image/icon_1024x1024.png" alt="Matchey Logo" class="logo-mark" />
+        <p class="logo-text">Matchey</p>
       </div>
       <nav class="nav-links">
-        <a href="./matchey-tos.html">Terms of Use</a>
-        <a href="./matchey-privacy.html">Privacy Policy</a>
+        <a href="./matchey-tos.html" class="nav-item">Terms of Use</a>
+        <a href="./matchey-privacy.html" class="nav-item">Privacy Policy</a>
       </nav>
     </header>
 
     <main class="landing-main">
-      <section class="hero-card landing-hero">
+      <section class="hero-card landing-hero premium-hero" id="hero-section">
+        <div class="hero-bg-glow"></div>
         <div class="hero-copy">
-          <p class="eyebrow">Now on iPhone</p>
-          <h2>Get Matchey on the App Store.</h2>
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span> Now on App Store
+          </div>
+          <h1 class="gradient-text">See what work is really like before you join.</h1>
           <p class="hero-body">
-            Private chats, profile verification, and safer matching in one place. Terms of Use and Privacy Policy
-            are available below for App Review and public reference.
+            Matchey helps students and professionals learn through private conversations with alumni and people already
+            in the workforce, so you can gain context before making career decisions.
           </p>
-          <div class="hero-actions">
-            <a class="primary-button button-link" href="https://apps.apple.com/" target="_blank" rel="noreferrer">Get now in the App Store</a>
-            <a class="ghost-button button-link" href="./matchey-privacy.html">Read Privacy Policy</a>
+          <div class="hero-actions" id="hero-actions">
+            <a class="primary-button premium-btn" href="https://apps.apple.com/my/app/matchey/id6758370075"
+              target="_blank" rel="noreferrer">
+              <span class="btn-text">Download on the App Store</span>
+              <span class="btn-glow"></span>
+            </a>
           </div>
         </div>
-        <div class="hero-panel">
-          <div class="hero-metric">
-            <span>Public docs</span>
-            <strong>Privacy + Terms</strong>
+
+        <div class="hero-visual" aria-label="Feature HIGHLIGHTS">
+          <div class="info-card info-card-main glass-card" id="card-private">
+            <div class="card-icon">💬</div>
+            <div class="card-content">
+              <span class="info-label">Private conversations</span>
+              <strong>Get real insights, not employer messaging.</strong>
+            </div>
           </div>
-          <div class="hero-metric">
-            <span>Review support</span>
-            <strong>Clear policy access</strong>
+          <div class="info-card glass-card" id="card-students">
+            <div class="card-icon">🎓</div>
+            <div class="card-content">
+              <span class="info-label">For students</span>
+              <strong>Connect with alumni and see what comes next.</strong>
+            </div>
           </div>
-          <div class="hero-metric">
-            <span>Platform</span>
-            <strong>iPhone and iPad</strong>
+          <div class="info-card glass-card" id="card-professionals">
+            <div class="card-icon">💼</div>
+            <div class="card-content">
+              <span class="info-label">For professionals</span>
+              <strong>Compare companies with ultimate privacy control.</strong>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section class="landing-grid">
-        <article class="legal-section">
-          <p class="eyebrow">Terms</p>
-          <h3>Terms of Use</h3>
-          <p>App-specific rules, acceptable use, moderation standards, and Apple EULA reference.</p>
-          <a href="./matchey-tos.html">Open Terms of Use</a>
-        </article>
-
-        <article class="legal-section">
-          <p class="eyebrow">Privacy</p>
-          <h3>Privacy Policy</h3>
-          <p>Data collection, AI consent, OpenAI disclosures, and service-provider sharing details.</p>
-          <a href="./matchey-privacy.html">Open Privacy Policy</a>
-        </article>
       </section>
     </main>
   </div>
 </body>
+
 </html>
